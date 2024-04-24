@@ -1,0 +1,34 @@
+/* * {
+    border: 1px solid red;
+} */
+
+
+#keyboard-div {
+    height: 200px;
+}
+
+/* Set the colours of the keyboard */
+.one { background-color: #5251e8;}
+.one.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.flat-two { background-color: #83b74a; }
+.flat-two.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.two { background-color: #ef66f0; }
+.two.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.flat-three { background-color: #5ae9a8; }
+.flat-three.activeKey {box-shadow: 0px 0px 20px 10px #fff }
+.three { background-color: #da575a; }
+.three.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.four { background-color: #68a4eb; }
+.four.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.flat-five { background-color: #aeb04c; }
+.flat-five.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.five { background-color: #9e5de3; }
+.five.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.flat-six { background-color: #5ddd5a; }
+.flat-six.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.six { background-color: #de559d; }
+.six.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.flat-seven { background-color: #6ce9e9; }
+.flat-seven.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
+.seven { background-color: #b5834e; }
+.seven.activeKey {box-shadow: 0px 0px 20px 10px #fff; }
