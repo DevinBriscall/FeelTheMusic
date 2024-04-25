@@ -4,54 +4,20 @@ import MuteButton from "./components/MuteButton.tsx";
 import * as Tone from "tone";
 import KeyBoardKey from "./components/KeyBoardKey.tsx";
 import { useState } from "react";
+import {
+  keys,
+  notes,
+  degrees,
+  mapDegreeToHalfSteps,
+  songs,
+  inputModes,
+} from "./assets/util.tsx";
 
 let currentKey = "C";
 let droneMuted = true;
 let keyboardMuted = true;
 const drone = new Tone.Synth().toDestination();
 const keyboardSynth = new Tone.PolySynth(Tone.AMSynth).toDestination();
-
-const keys = ["C", "G", "D", "A", "E", "B", "Gb", "Db", "Ab", "Eb", "Bb", "F"];
-const notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
-const degrees = [
-  "1",
-  "b2",
-  "2",
-  "b3",
-  "3",
-  "4",
-  "b5",
-  "5",
-  "b6",
-  "6",
-  "b7",
-  "7",
-] as const;
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const mapDegreeToHalfSteps: any = {
-  "1": 0,
-  b2: 1,
-  "2": 2,
-  b3: 3,
-  "3": 4,
-  "4": 5,
-  b5: 6,
-  "5": 7,
-  b6: 8,
-  "6": 9,
-  b7: 10,
-  "7": 11,
-  "8": 12,
-};
-
-const songs = [
-  "Choose a Song",
-  "Twinkle Twinkle Little Star",
-  "Mary Had a Little Lamb",
-];
-
-const inputModes = ["Manual", "Song"];
 
 export default function App() {
   const [mode, setMode] = useState("Manual");
